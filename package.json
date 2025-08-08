@@ -1,0 +1,9 @@
+{
+  "name": "puppeteer-scraper",
+  "version": "1.0.0",
+  "description": "Node.js script to scrape dynamic sites",
+  "main": "puppeteer_scraper.js",
+  "dependencies": {
+    "puppeteer": "^21.3.8"
+  }
+}
