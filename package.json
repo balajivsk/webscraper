@@ -1,16 +1,20 @@
 {
   "name": "smart-web-scraper",
   "version": "1.0.0",
-  "description": "Express API that auto-detects static/dynamic pages and scrapes text",
-  "main": "server.js",
+  "private": true,
+  "description": "Auto static/dynamic web scraper for n8n (Render friendly)",
   "type": "commonjs",
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
+    "@sparticuz/chromium": "^128.0.0",
+    "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.19.2",
-    "node-fetch": "^3.3.2",
-    "puppeteer": "^21.3.8"
+    "puppeteer-core": "^22.13.1"
   }
 }
