@@ -6,6 +6,18 @@ from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
+@app.get("/")
+def health():
+    return "OK"
+
+# --- your other endpoints below ---
+# @app.post("/scrape") ...
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    print(f"Starting Flask on 0.0.0.0:{port}", flush=True)
+    app.run(host="0.0.0.0", port=port)
+
 def is_dynamic(url):
     try:
         response = requests.get(url, timeout=10)
@@ -53,6 +65,4 @@ def scrape():
 if __name__ == '__main__':
     app.run(debug=True)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
