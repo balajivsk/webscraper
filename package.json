@@ -1,0 +1,19 @@
+{
+  "name": "ogemen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sparticuz/chromium": "latest",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "express": "^5.1.0",
+    "puppeteer-core": "^24.16.0"
+  }
+}
