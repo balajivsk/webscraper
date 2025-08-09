@@ -11,10 +11,11 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@sparticuz/chromium": "^128.0.0",
+    "@sparticuz/chromium": "^138.0.2",
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.19.2",
     "puppeteer-core": "^22.13.1"
   }
 }
+
